@@ -1,11 +1,10 @@
-# 🔐 Network Intrusion Detection using Real and Encrypted Synthetic Attack Traffic
+# Network Intrusion Detection using Real and Encrypted Synthetic Attack Traffic
 
 ## Project Overview
 
 - **Goal**: Detect anomalous or malicious activity in network flow data using supervised machine learning techniques.
 - **Approach**: Extract key flow-level features from the dataset, clean and preprocess them, and train multiple classifiers to evaluate detection performance.
 
----
 
 ##  Dataset Summary
 
@@ -16,15 +15,11 @@
 - **Imbalance**: The dataset is highly imbalanced (normal traffic is the majority class).
 - **Handling**: Used **stratified train-test split** to preserve class distribution.
 
----
-
 ##  Preprocessing Pipeline
 
 - **Initial Cleaning**: Removed non-informative columns (`uid`, `originh`, `unnamed`, etc.).
 - **Encoding**: Applied One-Hot Encoding for categorical features.
 - **Splitting**: Used `train_test_split()` from Scikit-learn (80:20 ratio, stratified).
-
----
 
 ##  Models Used
 
@@ -41,15 +36,11 @@
    - Distance-based classification
    - Predicts based on neighborhood majority
 
----
-
 ##  Evaluation Metrics
 
 - **Confusion Matrices**: Used to evaluate performance across all models.
 - **Precision-Recall Curves**
 - **ROC Curves**
-
----
 
 ##  Feature Importance
 
